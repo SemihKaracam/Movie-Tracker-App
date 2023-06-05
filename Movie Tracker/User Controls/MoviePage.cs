@@ -25,94 +25,87 @@ namespace Movie_Tracker.User_Controls
             _id = id;
         }
 
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-KB41T07;Initial Catalog=DbMovieTracker;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-PO7LRD3\SQLEXPRESS01;Initial Catalog=DbMovieTracker;Integrated Security=True; MultipleActiveResultSets=True");
 
-        private void FormTest_Load(object sender, EventArgs e)
-        {
-            GetMovieInfo();  // Get movie info
+      
+        //private void checkBox1_CheckedChanged(object sender, MouseEventArgs e)
+        //{
+        //    string movieID = _id.ToString();
+        //    try
+        //    {
+        //        con.Open();
 
-            GetGenres();  // Get movie genres
+        //        if (movieUserWatched.Checked)
+        //        {
+        //            string addSql = "INSERT INTO TableWatchedList VALUES ('" + Program.userID + "','" + movieID + "')";
 
-            CheckWatchedList();  // See if user already has movie in watched list
+        //            SqlCommand sqlCom = new SqlCommand(addSql, con);
+        //            sqlCom.ExecuteNonQuery();
+        //        }
+        //        else
+        //        {
+        //            string deleteSql = "DELETE FROM TableWatchedList WHERE user_id='" + Program.userID + "' AND mov_id='" + movieID + "'";
 
-            CheckWatchlist();  // See if user already has movie in watchlist
-        }
+        //            SqlCommand sqlCom = new SqlCommand(deleteSql, con);
+        //            sqlCom.ExecuteNonQuery();
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("SQL Query sirasinda hata olustu!" + ex.ToString());
+        //    }
+        //    finally
+        //    {
+        //        if (con != null)
+        //        {
+        //            con.Close();
+        //        }
+        //    }
+        //}
 
-        private void checkBox1_CheckedChanged(object sender, MouseEventArgs e)
-        {
-            string movieID = _id.ToString();
-            try
-            {
-                con.Open();
+        //private void checkBox2_CheckedChanged(object sender, MouseEventArgs e)
+        //{
+        //    string movieID = _id.ToString();
+        //    try
+        //    {
+        //        con.Open();
 
-                if (movieUserWatched.Checked)
-                {
-                    string addSql = "INSERT INTO TableWatchedList VALUES ('" + Program.userID + "','" + movieID + "')";
+        //        if (movieUserWatchlist.Checked)
+        //        {
+        //            string addSql = "INSERT INTO TableWatchList VALUES ('" + Program.userID + "','" + movieID + "')";
 
-                    SqlCommand sqlCom = new SqlCommand(addSql, con);
-                    sqlCom.ExecuteNonQuery();
-                }
-                else
-                {
-                    string deleteSql = "DELETE FROM TableWatchedList WHERE user_id='" + Program.userID + "' AND mov_id='" + movieID + "'";
+        //            SqlCommand sqlCom = new SqlCommand(addSql, con);
+        //            sqlCom.ExecuteNonQuery();
+        //        }
+        //        else
+        //        {
+        //            string deleteSql = "DELETE FROM TableWatchList WHERE user_id='" + Program.userID + "' AND mov_id='" + movieID + "'";
 
-                    SqlCommand sqlCom = new SqlCommand(deleteSql, con);
-                    sqlCom.ExecuteNonQuery();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("SQL Query sirasinda hata olustu!" + ex.ToString());
-            }
-            finally
-            {
-                if (con != null)
-                {
-                    con.Close();
-                }
-            }
-        }
-
-        private void checkBox2_CheckedChanged(object sender, MouseEventArgs e)
-        {
-            string movieID = _id.ToString();
-            try
-            {
-                con.Open();
-
-                if (movieUserWatchlist.Checked)
-                {
-                    string addSql = "INSERT INTO TableWatchList VALUES ('" + Program.userID + "','" + movieID + "')";
-
-                    SqlCommand sqlCom = new SqlCommand(addSql, con);
-                    sqlCom.ExecuteNonQuery();
-                }
-                else
-                {
-                    string deleteSql = "DELETE FROM TableWatchList WHERE user_id='" + Program.userID + "' AND mov_id='" + movieID + "'";
-
-                    SqlCommand sqlCom = new SqlCommand(deleteSql, con);
-                    sqlCom.ExecuteNonQuery();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("SQL Query sirasinda hata olustu!" + ex.ToString());
-            }
-            finally
-            {
-                if (con != null)
-                {
-                    con.Close();
-                }
-            }
-        }
+        //            SqlCommand sqlCom = new SqlCommand(deleteSql, con);
+        //            sqlCom.ExecuteNonQuery();
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("SQL Query sirasinda hata olustu!" + ex.ToString());
+        //    }
+        //    finally
+        //    {
+        //        if (con != null)
+        //        {
+        //            con.Close();
+        //        }
+        //    }
+        //}
 
         private void GetMovieInfo()
         {
             try
             {
-                con.Open();
+                if (con.State != ConnectionState.Open)
+                {
+                    con.Open();
+                }
                 string sqlQuery = "Select mov_title, mov_desc, mov_year, mov_length, mov_lang, mov_poster, vote_average, vote_count from TableMovie WHERE mov_id=" + _id.ToString();
                 SqlCommand sqlCommand = new SqlCommand(sqlQuery, con);
                 SqlDataReader sqlDR = sqlCommand.ExecuteReader();
@@ -145,7 +138,10 @@ namespace Movie_Tracker.User_Controls
         {
             try
             {
-                con.Open();
+                if (con.State != ConnectionState.Open)
+                {
+                    con.Open();
+                }
                 string sqlQuery = "Select user_id, mov_id from TableWatchedList WHERE user_id='" + Program.userID + "' AND mov_id='" + _id.ToString() + "'";
                 SqlCommand sqlCommand = new SqlCommand(sqlQuery, con);
                 SqlDataReader sqlDR = sqlCommand.ExecuteReader();
@@ -172,7 +168,10 @@ namespace Movie_Tracker.User_Controls
         {
             try
             {
-                con.Open();
+                if (con.State != ConnectionState.Open)
+                {
+                    con.Open();
+                }
                 string sqlQuery = "Select user_id, mov_id from TableWatchList WHERE user_id='" + Program.userID + "' AND mov_id='" + _id.ToString() + "'";
                 SqlCommand sqlCommand = new SqlCommand(sqlQuery, con);
                 SqlDataReader sqlDR = sqlCommand.ExecuteReader();
@@ -199,16 +198,32 @@ namespace Movie_Tracker.User_Controls
         {
             try
             {
-                con.Open();
-                string sqlQuery = "SELECT gen_name FROM TableGenre INNER JOIN TableMovieGenre ON TableGenre.gen_id=TableMovieGenre.gen_id WHERE mov_id='" + _id.ToString() + "'";
+                if (con.State != ConnectionState.Open)
+                {
+                    con.Open();
+                }
+                string sqlQuery = "SELECT gen_name FROM TableGenre INNER JOIN TableMovieGenre ON TableGenre.gen_id=TableMovieGenre.gen_id WHERE mov_id=" + _id.ToString();
                 SqlCommand sqlCommand = new SqlCommand(sqlQuery, con);
                 SqlDataReader sqlDR = sqlCommand.ExecuteReader();
 
+                //while (sqlDR.Read())
+                //{
+                //    genresTextBox.AppendText(sqlDR[0].ToString() + ", ");
+                //}
+                //genresTextBox.Text = genresTextBox.Text[..^1];
                 while (sqlDR.Read())
                 {
-                    genresTextBox.AppendText(sqlDR[0].ToString() + ", ");
+                    var label = new Label
+                    {
+                        Name = "labelCustom" + sqlDR[0].ToString(),
+                        Text = sqlDR[0].ToString(),
+                        Padding = new Padding(5),
+                        Margin = new Padding(2),
+                        BackColor = Color.Gray,
+                        AutoSize = true,
+                    };
+                    flwPanelGenres.Controls.Add(label);
                 }
-                genresTextBox.Text = genresTextBox.Text[..^1];
             }
             catch (Exception ex)
             {
@@ -233,6 +248,92 @@ namespace Movie_Tracker.User_Controls
         {
             Forms.FormSeeReviews form = new Forms.FormSeeReviews(_id);
             form.Show();
+        }
+
+        private void MoviePage_Load(object sender, EventArgs e)
+        {
+            GetMovieInfo();  // Get movie info
+
+            GetGenres();  // Get movie genres
+
+            CheckWatchedList();  // See if user already has movie in watched list
+
+            CheckWatchlist();  // See if user already has movie in watchlist
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            string movieID = _id.ToString();
+            try
+            {
+                if (con.State != ConnectionState.Open)
+                {
+                    con.Open();
+                }
+                if (movieUserWatched.Checked)
+                {
+                    string addSql = "INSERT INTO TableWatchedList VALUES ('" + Program.userID + "','" + movieID + "')";
+
+                    SqlCommand sqlCom = new SqlCommand(addSql, con);
+                    sqlCom.ExecuteNonQuery();
+                }
+                else
+                {
+                    string deleteSql = "DELETE FROM TableWatchedList WHERE user_id='" + Program.userID + "' AND mov_id='" + movieID + "'";
+
+                    SqlCommand sqlCom = new SqlCommand(deleteSql, con);
+                    sqlCom.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("SQL Query sirasinda hata olustu!" + ex.ToString());
+            }
+            finally
+            {
+                if (con != null)
+                {
+                    con.Close();
+                }
+            }
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            string movieID = _id.ToString();
+            try
+            {
+                if (con.State != ConnectionState.Open) 
+                {
+                    con.Open();
+                }
+
+                if (movieUserWatchlist.Checked)
+                {
+                    string addSql = "INSERT INTO TableWatchList VALUES ('" + Program.userID + "','" + movieID + "')";
+
+                    SqlCommand sqlCom = new SqlCommand(addSql, con);
+                    sqlCom.ExecuteNonQuery();
+                }
+                else
+                {
+                    string deleteSql = "DELETE FROM TableWatchList WHERE user_id='" + Program.userID + "' AND mov_id='" + movieID + "'";
+
+                    SqlCommand sqlCom = new SqlCommand(deleteSql, con);
+                    sqlCom.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("SQL Query sirasinda hata olustu!" + ex.ToString());
+            }
+            finally
+            {
+                if (con != null)
+                {
+                    con.Close();
+                }
+            }
         }
     }
 }

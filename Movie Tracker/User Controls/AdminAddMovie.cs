@@ -22,8 +22,7 @@ namespace Movie_Tracker.User_Controls
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-KB41T07;Initial Catalog=DbMovieTracker;Integrated Security=True");
-
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-PO7LRD3\SQLEXPRESS01;Initial Catalog=DbMovieTracker;Integrated Security=True");
         private void AdminAddMovie_Load(object sender, EventArgs e)
         {
 

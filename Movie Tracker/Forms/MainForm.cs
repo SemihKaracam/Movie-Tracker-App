@@ -150,10 +150,7 @@ public partial class MainForm : Form
         }
     }
 
-    private void btnMinimize_Click(object sender, EventArgs e)
-    {
-        this.WindowState |= FormWindowState.Minimized;
-    }
+
 
     private void MainForm_Load(object sender, EventArgs e)
     {
@@ -161,5 +158,12 @@ public partial class MainForm : Form
         {
             //button5.Visible = false;
         }
+    }
+
+  
+
+    private void btnMinimize_Click(object sender, EventArgs e)
+    {
+        this.WindowState |= FormWindowState.Minimized;
     }
 }

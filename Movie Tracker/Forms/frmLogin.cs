@@ -18,7 +18,7 @@ namespace Movie_Tracker
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-KB41T07;Initial Catalog=DbMovieTracker;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-PO7LRD3\SQLEXPRESS01;Initial Catalog=DbMovieTracker;Integrated Security = True");
 
         private void CheckbxShowPas_CheckedChanged(object sender, EventArgs e)
         {

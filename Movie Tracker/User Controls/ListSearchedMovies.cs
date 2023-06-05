@@ -26,9 +26,18 @@ namespace Movie_Tracker.User_Controls
             _searchString = searchString;
         }
 
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-KB41T07;Initial Catalog=DbMovieTracker;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-PO7LRD3\SQLEXPRESS01;Initial Catalog=DbMovieTracker;Integrated Security=True");
 
-        private void FormTest_Load(object sender, EventArgs e)
+
+
+        private void navigateToMovie(object sender, EventArgs e, string id)
+        {
+            MoviePage uc = new MoviePage(Int16.Parse(id));
+            var mainForm = Application.OpenForms.OfType<MainForm>().Single();
+            mainForm.addUserControl(uc);
+        }
+
+        private void ListSearchedMovies_Load(object sender, EventArgs e)
         {
             try
             {
@@ -81,13 +90,6 @@ namespace Movie_Tracker.User_Controls
                     con.Close();
                 }
             }
-        }
-
-        private void navigateToMovie(object sender, EventArgs e, string id)
-        {
-            MoviePage uc = new MoviePage(Int16.Parse(id));
-            var mainForm = Application.OpenForms.OfType<MainForm>().Single();
-            mainForm.addUserControl(uc);
         }
     }
 }

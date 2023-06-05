@@ -24,7 +24,7 @@ namespace Movie_Tracker.Forms
             _id = id;
         }
 
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-KB41T07;Initial Catalog=DbMovieTracker;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-PO7LRD3\SQLEXPRESS01;Initial Catalog=DbMovieTracker;Integrated Security=True");
 
         private void FormTest_Load(object sender, EventArgs e)
         {

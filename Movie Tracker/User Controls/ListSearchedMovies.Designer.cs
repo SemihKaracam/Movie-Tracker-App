@@ -28,17 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            SuspendLayout();
+            this.SuspendLayout();
             // 
             // ListSearchedMovies
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            AutoScroll = true;
-            Name = "ListSearchedMovies";
-            Size = new Size(700, 425);
-            Load += FormTest_Load;
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "ListSearchedMovies";
+            this.Size = new System.Drawing.Size(800, 567);
+            this.Load += new System.EventHandler(this.ListSearchedMovies_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

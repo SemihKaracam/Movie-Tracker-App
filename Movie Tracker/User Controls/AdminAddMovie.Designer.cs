@@ -28,395 +28,415 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            movTitle = new TextBox();
-            movDesc = new TextBox();
-            label2 = new Label();
-            movYear = new TextBox();
-            label3 = new Label();
-            movLength = new TextBox();
-            label4 = new Label();
-            movLanguage = new TextBox();
-            label5 = new Label();
-            movPoster = new TextBox();
-            label6 = new Label();
-            button1 = new Button();
-            moviePoster = new PictureBox();
-            genreAction = new CheckBox();
-            genreAdventure = new CheckBox();
-            genreAnimation = new CheckBox();
-            genreComedy = new CheckBox();
-            genreCrime = new CheckBox();
-            genreDrama = new CheckBox();
-            genreFantasy = new CheckBox();
-            genreMystery = new CheckBox();
-            genreRomance = new CheckBox();
-            genreSciFi = new CheckBox();
-            genreThriller = new CheckBox();
-            genreHorror = new CheckBox();
-            ((System.ComponentModel.ISupportInitialize)moviePoster).BeginInit();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.movTitle = new System.Windows.Forms.TextBox();
+            this.movDesc = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.movYear = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.movLength = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.movLanguage = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.movPoster = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.moviePoster = new System.Windows.Forms.PictureBox();
+            this.genreAction = new System.Windows.Forms.CheckBox();
+            this.genreAdventure = new System.Windows.Forms.CheckBox();
+            this.genreAnimation = new System.Windows.Forms.CheckBox();
+            this.genreComedy = new System.Windows.Forms.CheckBox();
+            this.genreCrime = new System.Windows.Forms.CheckBox();
+            this.genreDrama = new System.Windows.Forms.CheckBox();
+            this.genreFantasy = new System.Windows.Forms.CheckBox();
+            this.genreMystery = new System.Windows.Forms.CheckBox();
+            this.genreRomance = new System.Windows.Forms.CheckBox();
+            this.genreSciFi = new System.Windows.Forms.CheckBox();
+            this.genreThriller = new System.Windows.Forms.CheckBox();
+            this.genreHorror = new System.Windows.Forms.CheckBox();
+            ((System.ComponentModel.ISupportInitialize)(this.moviePoster)).BeginInit();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.BlueViolet;
-            label1.Location = new Point(35, 38);
-            label1.Name = "label1";
-            label1.Size = new Size(35, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Title:";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.label1.Location = new System.Drawing.Point(40, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Title";
             // 
             // movTitle
             // 
-            movTitle.Location = new Point(75, 32);
-            movTitle.Name = "movTitle";
-            movTitle.Size = new Size(312, 23);
-            movTitle.TabIndex = 6;
+            this.movTitle.Location = new System.Drawing.Point(136, 48);
+            this.movTitle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.movTitle.Name = "movTitle";
+            this.movTitle.Size = new System.Drawing.Size(355, 27);
+            this.movTitle.TabIndex = 6;
             // 
             // movDesc
             // 
-            movDesc.Location = new Point(115, 61);
-            movDesc.Name = "movDesc";
-            movDesc.Size = new Size(272, 23);
-            movDesc.TabIndex = 8;
+            this.movDesc.Location = new System.Drawing.Point(136, 86);
+            this.movDesc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.movDesc.Name = "movDesc";
+            this.movDesc.Size = new System.Drawing.Size(354, 27);
+            this.movDesc.TabIndex = 8;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.BlueViolet;
-            label2.Location = new Point(35, 67);
-            label2.Name = "label2";
-            label2.Size = new Size(74, 15);
-            label2.TabIndex = 7;
-            label2.Text = "Description:";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.label2.Location = new System.Drawing.Point(40, 89);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 20);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Description";
             // 
             // movYear
             // 
-            movYear.Location = new Point(75, 90);
-            movYear.Name = "movYear";
-            movYear.Size = new Size(312, 23);
-            movYear.TabIndex = 10;
+            this.movYear.Location = new System.Drawing.Point(136, 125);
+            this.movYear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.movYear.Name = "movYear";
+            this.movYear.Size = new System.Drawing.Size(355, 27);
+            this.movYear.TabIndex = 10;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.BlueViolet;
-            label3.Location = new Point(35, 96);
-            label3.Name = "label3";
-            label3.Size = new Size(34, 15);
-            label3.TabIndex = 9;
-            label3.Text = "Year:";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.label3.Location = new System.Drawing.Point(40, 128);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(39, 20);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Year";
             // 
             // movLength
             // 
-            movLength.Location = new Point(90, 119);
-            movLength.Name = "movLength";
-            movLength.Size = new Size(297, 23);
-            movLength.TabIndex = 12;
+            this.movLength.Location = new System.Drawing.Point(136, 164);
+            this.movLength.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.movLength.Name = "movLength";
+            this.movLength.Size = new System.Drawing.Size(355, 27);
+            this.movLength.TabIndex = 12;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = Color.BlueViolet;
-            label4.Location = new Point(35, 125);
-            label4.Name = "label4";
-            label4.Size = new Size(49, 15);
-            label4.TabIndex = 11;
-            label4.Text = "Length:";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.label4.Location = new System.Drawing.Point(40, 167);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 20);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Length";
             // 
             // movLanguage
             // 
-            movLanguage.Location = new Point(104, 148);
-            movLanguage.Name = "movLanguage";
-            movLanguage.Size = new Size(283, 23);
-            movLanguage.TabIndex = 14;
+            this.movLanguage.Location = new System.Drawing.Point(136, 202);
+            this.movLanguage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.movLanguage.Name = "movLanguage";
+            this.movLanguage.Size = new System.Drawing.Size(355, 27);
+            this.movLanguage.TabIndex = 14;
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = Color.BlueViolet;
-            label5.Location = new Point(35, 154);
-            label5.Name = "label5";
-            label5.Size = new Size(63, 15);
-            label5.TabIndex = 13;
-            label5.Text = "Language:";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.label5.Location = new System.Drawing.Point(40, 205);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(77, 20);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Language";
             // 
             // movPoster
             // 
-            movPoster.Location = new Point(113, 177);
-            movPoster.Name = "movPoster";
-            movPoster.Size = new Size(274, 23);
-            movPoster.TabIndex = 16;
-            movPoster.TextChanged += Poster_TextChanged;
+            this.movPoster.Location = new System.Drawing.Point(136, 241);
+            this.movPoster.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.movPoster.Name = "movPoster";
+            this.movPoster.Size = new System.Drawing.Size(355, 27);
+            this.movPoster.TabIndex = 16;
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.ForeColor = Color.BlueViolet;
-            label6.Location = new Point(35, 183);
-            label6.Name = "label6";
-            label6.Size = new Size(72, 15);
-            label6.TabIndex = 15;
-            label6.Text = "Poster URL:";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.label6.Location = new System.Drawing.Point(40, 244);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(86, 20);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Poster URL";
             // 
             // button1
             // 
-            button1.BackColor = Color.BlueViolet;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Nirmala UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(606, 357);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 34);
-            button1.TabIndex = 17;
-            button1.Text = "SAVE";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            this.button1.BackColor = System.Drawing.Color.ForestGreen;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(658, 459);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(110, 45);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "SAVE";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // moviePoster
             // 
-            moviePoster.Location = new Point(542, 16);
-            moviePoster.Name = "moviePoster";
-            moviePoster.Size = new Size(140, 210);
-            moviePoster.SizeMode = PictureBoxSizeMode.StretchImage;
-            moviePoster.TabIndex = 18;
-            moviePoster.TabStop = false;
+            this.moviePoster.Location = new System.Drawing.Point(553, 38);
+            this.moviePoster.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.moviePoster.Name = "moviePoster";
+            this.moviePoster.Size = new System.Drawing.Size(215, 255);
+            this.moviePoster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.moviePoster.TabIndex = 18;
+            this.moviePoster.TabStop = false;
             // 
             // genreAction
             // 
-            genreAction.Appearance = Appearance.Button;
-            genreAction.AutoSize = true;
-            genreAction.BackColor = Color.BlueViolet;
-            genreAction.FlatAppearance.BorderSize = 0;
-            genreAction.FlatStyle = FlatStyle.Flat;
-            genreAction.Font = new Font("Nirmala UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            genreAction.ForeColor = Color.White;
-            genreAction.Location = new Point(35, 237);
-            genreAction.Name = "genreAction";
-            genreAction.Size = new Size(52, 25);
-            genreAction.TabIndex = 19;
-            genreAction.Text = "Action";
-            genreAction.UseVisualStyleBackColor = false;
+            this.genreAction.Appearance = System.Windows.Forms.Appearance.Button;
+            this.genreAction.AutoSize = true;
+            this.genreAction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.genreAction.FlatAppearance.BorderSize = 0;
+            this.genreAction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genreAction.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.genreAction.ForeColor = System.Drawing.Color.White;
+            this.genreAction.Location = new System.Drawing.Point(40, 316);
+            this.genreAction.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.genreAction.Name = "genreAction";
+            this.genreAction.Size = new System.Drawing.Size(62, 30);
+            this.genreAction.TabIndex = 19;
+            this.genreAction.Text = "Action";
+            this.genreAction.UseVisualStyleBackColor = false;
             // 
             // genreAdventure
             // 
-            genreAdventure.Appearance = Appearance.Button;
-            genreAdventure.AutoSize = true;
-            genreAdventure.BackColor = Color.BlueViolet;
-            genreAdventure.FlatAppearance.BorderSize = 0;
-            genreAdventure.FlatStyle = FlatStyle.Flat;
-            genreAdventure.Font = new Font("Nirmala UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            genreAdventure.ForeColor = Color.White;
-            genreAdventure.Location = new Point(93, 237);
-            genreAdventure.Name = "genreAdventure";
-            genreAdventure.Size = new Size(72, 25);
-            genreAdventure.TabIndex = 20;
-            genreAdventure.Text = "Adventure";
-            genreAdventure.UseVisualStyleBackColor = false;
+            this.genreAdventure.Appearance = System.Windows.Forms.Appearance.Button;
+            this.genreAdventure.AutoSize = true;
+            this.genreAdventure.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.genreAdventure.FlatAppearance.BorderSize = 0;
+            this.genreAdventure.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genreAdventure.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.genreAdventure.ForeColor = System.Drawing.Color.White;
+            this.genreAdventure.Location = new System.Drawing.Point(106, 316);
+            this.genreAdventure.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.genreAdventure.Name = "genreAdventure";
+            this.genreAdventure.Size = new System.Drawing.Size(87, 30);
+            this.genreAdventure.TabIndex = 20;
+            this.genreAdventure.Text = "Adventure";
+            this.genreAdventure.UseVisualStyleBackColor = false;
             // 
             // genreAnimation
             // 
-            genreAnimation.Appearance = Appearance.Button;
-            genreAnimation.AutoSize = true;
-            genreAnimation.BackColor = Color.BlueViolet;
-            genreAnimation.FlatAppearance.BorderSize = 0;
-            genreAnimation.FlatStyle = FlatStyle.Flat;
-            genreAnimation.Font = new Font("Nirmala UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            genreAnimation.ForeColor = Color.White;
-            genreAnimation.Location = new Point(171, 237);
-            genreAnimation.Name = "genreAnimation";
-            genreAnimation.Size = new Size(73, 25);
-            genreAnimation.TabIndex = 21;
-            genreAnimation.Text = "Animation";
-            genreAnimation.UseVisualStyleBackColor = false;
+            this.genreAnimation.Appearance = System.Windows.Forms.Appearance.Button;
+            this.genreAnimation.AutoSize = true;
+            this.genreAnimation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.genreAnimation.FlatAppearance.BorderSize = 0;
+            this.genreAnimation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genreAnimation.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.genreAnimation.ForeColor = System.Drawing.Color.White;
+            this.genreAnimation.Location = new System.Drawing.Point(195, 316);
+            this.genreAnimation.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.genreAnimation.Name = "genreAnimation";
+            this.genreAnimation.Size = new System.Drawing.Size(88, 30);
+            this.genreAnimation.TabIndex = 21;
+            this.genreAnimation.Text = "Animation";
+            this.genreAnimation.UseVisualStyleBackColor = false;
             // 
             // genreComedy
             // 
-            genreComedy.Appearance = Appearance.Button;
-            genreComedy.AutoSize = true;
-            genreComedy.BackColor = Color.BlueViolet;
-            genreComedy.FlatAppearance.BorderSize = 0;
-            genreComedy.FlatStyle = FlatStyle.Flat;
-            genreComedy.Font = new Font("Nirmala UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            genreComedy.ForeColor = Color.White;
-            genreComedy.Location = new Point(250, 237);
-            genreComedy.Name = "genreComedy";
-            genreComedy.Size = new Size(62, 25);
-            genreComedy.TabIndex = 22;
-            genreComedy.Text = "Comedy";
-            genreComedy.UseVisualStyleBackColor = false;
+            this.genreComedy.Appearance = System.Windows.Forms.Appearance.Button;
+            this.genreComedy.AutoSize = true;
+            this.genreComedy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.genreComedy.FlatAppearance.BorderSize = 0;
+            this.genreComedy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genreComedy.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.genreComedy.ForeColor = System.Drawing.Color.White;
+            this.genreComedy.Location = new System.Drawing.Point(286, 316);
+            this.genreComedy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.genreComedy.Name = "genreComedy";
+            this.genreComedy.Size = new System.Drawing.Size(74, 30);
+            this.genreComedy.TabIndex = 22;
+            this.genreComedy.Text = "Comedy";
+            this.genreComedy.UseVisualStyleBackColor = false;
             // 
             // genreCrime
             // 
-            genreCrime.Appearance = Appearance.Button;
-            genreCrime.AutoSize = true;
-            genreCrime.BackColor = Color.BlueViolet;
-            genreCrime.FlatAppearance.BorderSize = 0;
-            genreCrime.FlatStyle = FlatStyle.Flat;
-            genreCrime.Font = new Font("Nirmala UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            genreCrime.ForeColor = Color.White;
-            genreCrime.Location = new Point(35, 268);
-            genreCrime.Name = "genreCrime";
-            genreCrime.Size = new Size(49, 25);
-            genreCrime.TabIndex = 23;
-            genreCrime.Text = "Crime";
-            genreCrime.UseVisualStyleBackColor = false;
+            this.genreCrime.Appearance = System.Windows.Forms.Appearance.Button;
+            this.genreCrime.AutoSize = true;
+            this.genreCrime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.genreCrime.FlatAppearance.BorderSize = 0;
+            this.genreCrime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genreCrime.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.genreCrime.ForeColor = System.Drawing.Color.White;
+            this.genreCrime.Location = new System.Drawing.Point(40, 357);
+            this.genreCrime.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.genreCrime.Name = "genreCrime";
+            this.genreCrime.Size = new System.Drawing.Size(58, 30);
+            this.genreCrime.TabIndex = 23;
+            this.genreCrime.Text = "Crime";
+            this.genreCrime.UseVisualStyleBackColor = false;
             // 
             // genreDrama
             // 
-            genreDrama.Appearance = Appearance.Button;
-            genreDrama.AutoSize = true;
-            genreDrama.BackColor = Color.BlueViolet;
-            genreDrama.FlatAppearance.BorderSize = 0;
-            genreDrama.FlatStyle = FlatStyle.Flat;
-            genreDrama.Font = new Font("Nirmala UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            genreDrama.ForeColor = Color.White;
-            genreDrama.Location = new Point(90, 268);
-            genreDrama.Name = "genreDrama";
-            genreDrama.Size = new Size(52, 25);
-            genreDrama.TabIndex = 24;
-            genreDrama.Text = "Drama";
-            genreDrama.UseVisualStyleBackColor = false;
+            this.genreDrama.Appearance = System.Windows.Forms.Appearance.Button;
+            this.genreDrama.AutoSize = true;
+            this.genreDrama.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.genreDrama.FlatAppearance.BorderSize = 0;
+            this.genreDrama.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genreDrama.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.genreDrama.ForeColor = System.Drawing.Color.White;
+            this.genreDrama.Location = new System.Drawing.Point(103, 357);
+            this.genreDrama.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.genreDrama.Name = "genreDrama";
+            this.genreDrama.Size = new System.Drawing.Size(64, 30);
+            this.genreDrama.TabIndex = 24;
+            this.genreDrama.Text = "Drama";
+            this.genreDrama.UseVisualStyleBackColor = false;
             // 
             // genreFantasy
             // 
-            genreFantasy.Appearance = Appearance.Button;
-            genreFantasy.AutoSize = true;
-            genreFantasy.BackColor = Color.BlueViolet;
-            genreFantasy.FlatAppearance.BorderSize = 0;
-            genreFantasy.FlatStyle = FlatStyle.Flat;
-            genreFantasy.Font = new Font("Nirmala UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            genreFantasy.ForeColor = Color.White;
-            genreFantasy.Location = new Point(148, 268);
-            genreFantasy.Name = "genreFantasy";
-            genreFantasy.Size = new Size(57, 25);
-            genreFantasy.TabIndex = 25;
-            genreFantasy.Text = "Fantasy";
-            genreFantasy.UseVisualStyleBackColor = false;
+            this.genreFantasy.Appearance = System.Windows.Forms.Appearance.Button;
+            this.genreFantasy.AutoSize = true;
+            this.genreFantasy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.genreFantasy.FlatAppearance.BorderSize = 0;
+            this.genreFantasy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genreFantasy.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.genreFantasy.ForeColor = System.Drawing.Color.White;
+            this.genreFantasy.Location = new System.Drawing.Point(169, 357);
+            this.genreFantasy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.genreFantasy.Name = "genreFantasy";
+            this.genreFantasy.Size = new System.Drawing.Size(67, 30);
+            this.genreFantasy.TabIndex = 25;
+            this.genreFantasy.Text = "Fantasy";
+            this.genreFantasy.UseVisualStyleBackColor = false;
             // 
             // genreMystery
             // 
-            genreMystery.Appearance = Appearance.Button;
-            genreMystery.AutoSize = true;
-            genreMystery.BackColor = Color.BlueViolet;
-            genreMystery.FlatAppearance.BorderSize = 0;
-            genreMystery.FlatStyle = FlatStyle.Flat;
-            genreMystery.Font = new Font("Nirmala UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            genreMystery.ForeColor = Color.White;
-            genreMystery.Location = new Point(35, 299);
-            genreMystery.Name = "genreMystery";
-            genreMystery.Size = new Size(59, 25);
-            genreMystery.TabIndex = 27;
-            genreMystery.Text = "Mystery";
-            genreMystery.UseVisualStyleBackColor = false;
+            this.genreMystery.Appearance = System.Windows.Forms.Appearance.Button;
+            this.genreMystery.AutoSize = true;
+            this.genreMystery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.genreMystery.FlatAppearance.BorderSize = 0;
+            this.genreMystery.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genreMystery.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.genreMystery.ForeColor = System.Drawing.Color.White;
+            this.genreMystery.Location = new System.Drawing.Point(40, 399);
+            this.genreMystery.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.genreMystery.Name = "genreMystery";
+            this.genreMystery.Size = new System.Drawing.Size(71, 30);
+            this.genreMystery.TabIndex = 27;
+            this.genreMystery.Text = "Mystery";
+            this.genreMystery.UseVisualStyleBackColor = false;
             // 
             // genreRomance
             // 
-            genreRomance.Appearance = Appearance.Button;
-            genreRomance.AutoSize = true;
-            genreRomance.BackColor = Color.BlueViolet;
-            genreRomance.FlatAppearance.BorderSize = 0;
-            genreRomance.FlatStyle = FlatStyle.Flat;
-            genreRomance.Font = new Font("Nirmala UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            genreRomance.ForeColor = Color.White;
-            genreRomance.Location = new Point(100, 299);
-            genreRomance.Name = "genreRomance";
-            genreRomance.Size = new Size(67, 25);
-            genreRomance.TabIndex = 28;
-            genreRomance.Text = "Romance";
-            genreRomance.UseVisualStyleBackColor = false;
+            this.genreRomance.Appearance = System.Windows.Forms.Appearance.Button;
+            this.genreRomance.AutoSize = true;
+            this.genreRomance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.genreRomance.FlatAppearance.BorderSize = 0;
+            this.genreRomance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genreRomance.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.genreRomance.ForeColor = System.Drawing.Color.White;
+            this.genreRomance.Location = new System.Drawing.Point(114, 399);
+            this.genreRomance.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.genreRomance.Name = "genreRomance";
+            this.genreRomance.Size = new System.Drawing.Size(81, 30);
+            this.genreRomance.TabIndex = 28;
+            this.genreRomance.Text = "Romance";
+            this.genreRomance.UseVisualStyleBackColor = false;
             // 
             // genreSciFi
             // 
-            genreSciFi.Appearance = Appearance.Button;
-            genreSciFi.AutoSize = true;
-            genreSciFi.BackColor = Color.BlueViolet;
-            genreSciFi.FlatAppearance.BorderSize = 0;
-            genreSciFi.FlatStyle = FlatStyle.Flat;
-            genreSciFi.Font = new Font("Nirmala UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            genreSciFi.ForeColor = Color.White;
-            genreSciFi.Location = new Point(173, 299);
-            genreSciFi.Name = "genreSciFi";
-            genreSciFi.Size = new Size(46, 25);
-            genreSciFi.TabIndex = 29;
-            genreSciFi.Text = "Sci-Fi";
-            genreSciFi.UseVisualStyleBackColor = false;
+            this.genreSciFi.Appearance = System.Windows.Forms.Appearance.Button;
+            this.genreSciFi.AutoSize = true;
+            this.genreSciFi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.genreSciFi.FlatAppearance.BorderSize = 0;
+            this.genreSciFi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genreSciFi.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.genreSciFi.ForeColor = System.Drawing.Color.White;
+            this.genreSciFi.Location = new System.Drawing.Point(198, 399);
+            this.genreSciFi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.genreSciFi.Name = "genreSciFi";
+            this.genreSciFi.Size = new System.Drawing.Size(55, 30);
+            this.genreSciFi.TabIndex = 29;
+            this.genreSciFi.Text = "Sci-Fi";
+            this.genreSciFi.UseVisualStyleBackColor = false;
             // 
             // genreThriller
             // 
-            genreThriller.Appearance = Appearance.Button;
-            genreThriller.AutoSize = true;
-            genreThriller.BackColor = Color.BlueViolet;
-            genreThriller.FlatAppearance.BorderSize = 0;
-            genreThriller.FlatStyle = FlatStyle.Flat;
-            genreThriller.Font = new Font("Nirmala UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            genreThriller.ForeColor = Color.White;
-            genreThriller.Location = new Point(225, 299);
-            genreThriller.Name = "genreThriller";
-            genreThriller.Size = new Size(54, 25);
-            genreThriller.TabIndex = 30;
-            genreThriller.Text = "Thriller";
-            genreThriller.UseVisualStyleBackColor = false;
+            this.genreThriller.Appearance = System.Windows.Forms.Appearance.Button;
+            this.genreThriller.AutoSize = true;
+            this.genreThriller.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.genreThriller.FlatAppearance.BorderSize = 0;
+            this.genreThriller.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genreThriller.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.genreThriller.ForeColor = System.Drawing.Color.White;
+            this.genreThriller.Location = new System.Drawing.Point(257, 399);
+            this.genreThriller.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.genreThriller.Name = "genreThriller";
+            this.genreThriller.Size = new System.Drawing.Size(65, 30);
+            this.genreThriller.TabIndex = 30;
+            this.genreThriller.Text = "Thriller";
+            this.genreThriller.UseVisualStyleBackColor = false;
             // 
             // genreHorror
             // 
-            genreHorror.Appearance = Appearance.Button;
-            genreHorror.AutoSize = true;
-            genreHorror.BackColor = Color.BlueViolet;
-            genreHorror.FlatAppearance.BorderSize = 0;
-            genreHorror.FlatStyle = FlatStyle.Flat;
-            genreHorror.Font = new Font("Nirmala UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            genreHorror.ForeColor = Color.White;
-            genreHorror.Location = new Point(211, 268);
-            genreHorror.Name = "genreHorror";
-            genreHorror.Size = new Size(52, 25);
-            genreHorror.TabIndex = 26;
-            genreHorror.Text = "Horror";
-            genreHorror.UseVisualStyleBackColor = false;
+            this.genreHorror.Appearance = System.Windows.Forms.Appearance.Button;
+            this.genreHorror.AutoSize = true;
+            this.genreHorror.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.genreHorror.FlatAppearance.BorderSize = 0;
+            this.genreHorror.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genreHorror.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.genreHorror.ForeColor = System.Drawing.Color.White;
+            this.genreHorror.Location = new System.Drawing.Point(241, 357);
+            this.genreHorror.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.genreHorror.Name = "genreHorror";
+            this.genreHorror.Size = new System.Drawing.Size(63, 30);
+            this.genreHorror.TabIndex = 26;
+            this.genreHorror.Text = "Horror";
+            this.genreHorror.UseVisualStyleBackColor = false;
             // 
             // AdminAddMovie
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(genreThriller);
-            Controls.Add(genreSciFi);
-            Controls.Add(genreRomance);
-            Controls.Add(genreMystery);
-            Controls.Add(genreHorror);
-            Controls.Add(genreFantasy);
-            Controls.Add(genreDrama);
-            Controls.Add(genreCrime);
-            Controls.Add(genreComedy);
-            Controls.Add(genreAnimation);
-            Controls.Add(genreAdventure);
-            Controls.Add(genreAction);
-            Controls.Add(moviePoster);
-            Controls.Add(button1);
-            Controls.Add(movPoster);
-            Controls.Add(label6);
-            Controls.Add(movLanguage);
-            Controls.Add(label5);
-            Controls.Add(movLength);
-            Controls.Add(label4);
-            Controls.Add(movYear);
-            Controls.Add(label3);
-            Controls.Add(movDesc);
-            Controls.Add(label2);
-            Controls.Add(movTitle);
-            Controls.Add(label1);
-            Name = "AdminAddMovie";
-            Size = new Size(700, 408);
-            Load += AdminAddMovie_Load;
-            ((System.ComponentModel.ISupportInitialize)moviePoster).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.genreThriller);
+            this.Controls.Add(this.genreSciFi);
+            this.Controls.Add(this.genreRomance);
+            this.Controls.Add(this.genreMystery);
+            this.Controls.Add(this.genreHorror);
+            this.Controls.Add(this.genreFantasy);
+            this.Controls.Add(this.genreDrama);
+            this.Controls.Add(this.genreCrime);
+            this.Controls.Add(this.genreComedy);
+            this.Controls.Add(this.genreAnimation);
+            this.Controls.Add(this.genreAdventure);
+            this.Controls.Add(this.genreAction);
+            this.Controls.Add(this.moviePoster);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.movPoster);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.movLanguage);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.movLength);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.movYear);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.movDesc);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.movTitle);
+            this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "AdminAddMovie";
+            this.Size = new System.Drawing.Size(800, 544);
+            ((System.ComponentModel.ISupportInitialize)(this.moviePoster)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
